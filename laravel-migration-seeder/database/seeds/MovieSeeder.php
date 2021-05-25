@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use App\Movie;
+
 class MovieSeeder extends Seeder
 {
     /**
@@ -11,6 +13,6 @@ class MovieSeeder extends Seeder
      */
     public function run()
     {
-        factory(Movies::class, 15)->create();
+        factory(Movie::class, 15)->create();
     }
 }
