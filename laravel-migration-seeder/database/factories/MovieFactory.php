@@ -12,6 +12,6 @@ $factory->define(Movie::class, function (Faker $faker) {
         'original_title' => $faker -> sentence(3),
         'nationality' => $faker -> state,
         'date' => $faker -> date,
-        'vote' => $faker -> numberBetween(1, 10),
+        'vote' => $faker -> randomFloat(2, 1, 10),
     ];
 });
